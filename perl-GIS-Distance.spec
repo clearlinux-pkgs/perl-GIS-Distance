@@ -4,13 +4,14 @@
 #
 Name     : perl-GIS-Distance
 Version  : 0.18
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/B/BL/BLUEFEET/GIS-Distance-0.18.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BL/BLUEFEET/GIS-Distance-0.18.tar.gz
 Summary  : 'Calculate geographic distances.'
 Group    : Development/Tools
 License  : GPL-3.0
 Requires: perl-GIS-Distance-license = %{version}-%{release}
+Requires: perl(Class::Measure::Length)
 BuildRequires : buildreq-cpan
 BuildRequires : perl(ExtUtils::Config)
 BuildRequires : perl(ExtUtils::Helpers)
