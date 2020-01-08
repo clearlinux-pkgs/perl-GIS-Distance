@@ -4,13 +4,14 @@
 #
 Name     : perl-GIS-Distance
 Version  : 0.18
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/B/BL/BLUEFEET/GIS-Distance-0.18.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BL/BLUEFEET/GIS-Distance-0.18.tar.gz
 Summary  : 'Calculate geographic distances.'
 Group    : Development/Tools
 License  : GPL-3.0
 Requires: perl-GIS-Distance-license = %{version}-%{release}
+Requires: perl-GIS-Distance-perl = %{version}-%{release}
 Requires: perl(Class::Measure::Length)
 BuildRequires : buildreq-cpan
 BuildRequires : perl(ExtUtils::Config)
@@ -43,8 +44,18 @@ Group: Default
 license components for the perl-GIS-Distance package.
 
 
+%package perl
+Summary: perl components for the perl-GIS-Distance package.
+Group: Default
+Requires: perl-GIS-Distance = %{version}-%{release}
+
+%description perl
+perl components for the perl-GIS-Distance package.
+
+
 %prep
 %setup -q -n GIS-Distance-0.18
+cd %{_builddir}/GIS-Distance-0.18
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -62,7 +73,7 @@ fi
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-GIS-Distance
-cp LICENSE %{buildroot}/usr/share/package-licenses/perl-GIS-Distance/LICENSE
+cp %{_builddir}/GIS-Distance-0.18/LICENSE %{buildroot}/usr/share/package-licenses/perl-GIS-Distance/31a3d460bb3c7d98845187c716a30db81c44b615
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -75,17 +86,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance.pm
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance/ALT.pm
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance/Constants.pm
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance/Cosine.pm
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance/Formula.pm
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance/GreatCircle.pm
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance/Haversine.pm
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance/MathTrig.pm
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance/Null.pm
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance/Polar.pm
-/usr/lib/perl5/vendor_perl/5.28.2/GIS/Distance/Vincenty.pm
 
 %files dev
 %defattr(-,root,root,-)
@@ -103,4 +103,18 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/perl-GIS-Distance/LICENSE
+/usr/share/package-licenses/perl-GIS-Distance/31a3d460bb3c7d98845187c716a30db81c44b615
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance.pm
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance/ALT.pm
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance/Constants.pm
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance/Cosine.pm
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance/Formula.pm
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance/GreatCircle.pm
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance/Haversine.pm
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance/MathTrig.pm
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance/Null.pm
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance/Polar.pm
+/usr/lib/perl5/vendor_perl/5.30.1/GIS/Distance/Vincenty.pm
