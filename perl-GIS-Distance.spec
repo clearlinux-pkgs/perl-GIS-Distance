@@ -4,7 +4,7 @@
 #
 Name     : perl-GIS-Distance
 Version  : 0.19
-Release  : 6
+Release  : 7
 URL      : https://cpan.metacpan.org/authors/id/B/BL/BLUEFEET/GIS-Distance-0.19.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BL/BLUEFEET/GIS-Distance-0.19.tar.gz
 Summary  : 'Calculate geographic distances.'
@@ -107,14 +107,14 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance.pm
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance/ALT.pm
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance/Constants.pm
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance/Cosine.pm
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance/Formula.pm
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance/GreatCircle.pm
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance/Haversine.pm
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance/MathTrig.pm
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance/Null.pm
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance/Polar.pm
-/usr/lib/perl5/vendor_perl/5.30.3/GIS/Distance/Vincenty.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/ALT.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Constants.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Cosine.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Formula.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/GreatCircle.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Haversine.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/MathTrig.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Null.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Polar.pm
+/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Vincenty.pm
