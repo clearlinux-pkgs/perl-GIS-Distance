@@ -107,14 +107,14 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance.pm
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/ALT.pm
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Constants.pm
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Cosine.pm
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Formula.pm
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/GreatCircle.pm
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Haversine.pm
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/MathTrig.pm
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Null.pm
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Polar.pm
-/usr/lib/perl5/vendor_perl/5.32.1/GIS/Distance/Vincenty.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance/ALT.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance/Constants.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance/Cosine.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance/Formula.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance/GreatCircle.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance/Haversine.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance/MathTrig.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance/Null.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance/Polar.pm
+/usr/lib/perl5/vendor_perl/5.34.0/GIS/Distance/Vincenty.pm
