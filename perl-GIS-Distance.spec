@@ -4,7 +4,7 @@
 #
 Name     : perl-GIS-Distance
 Version  : 0.19
-Release  : 12
+Release  : 13
 URL      : https://cpan.metacpan.org/authors/id/B/BL/BLUEFEET/GIS-Distance-0.19.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BL/BLUEFEET/GIS-Distance-0.19.tar.gz
 Summary  : 'Calculate geographic distances.'
